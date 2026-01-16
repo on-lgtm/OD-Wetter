@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Wetterübersicht</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f3f3f3;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Header with left logo */
+    .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 20px;
+    }
+
+    .header img {
+        height: 70px; /* Adjust logo size */
+    }
+
+    .header-title {
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Grid layout – exactly 5 columns */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 20px;
+        max-width: 1800px;
+        margin: auto;
+    }
+
+    .widget-card {
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: 365px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+    }
+
+    .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #555;
+        font-weight: bold;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- HEADER WITH LOGO LEFT -->
+<div class="header">
+    <img src="M:\Nasan\ON - Vorlagen und Logos\Over-Dach-300x266.png" alt="Logo">
+    <div class="header-title">Wetterübersicht</div>
+</div>
+
+<!-- WEATHER GRID -->
+<div class="grid">
+
+    <div class="widget-card">
+        <div class="title">Aachen</div>
+        <iframe src="https://api.wetteronline.de/wetterwidget?gid=10501&modeid=FC3&seourl=aachen&locationname=Aachen&lang=de"></iframe>
+    </div>
+
+    <div class="widget-card">
+        <div class="title">Bochum</div>
+        <iframe src="https://api.wetteronline.de/wetterwidget?gid=10411&modeid=FC3&seourl=bochum&locationname=Bochum&lang=de"></iframe>
+    </div>
+
+    <div class="widget-card">
+        <div class="title">Dormagen</div>
+        <iframe src="https://api.wetteronline.de/wetterwidget?gid=z4754&modeid=FC3&seourl=dormagen&locationname=Dormagen&lang=de"></iframe>
+    </div>
+
+    <div class="widget-card">
+        <div class="title">Erkelenz</div>
+        <iframe src="https://api.wetteronline.de/wetterwidget?gid=x0653&modeid=FC3&seourl=erkelenz&locationname=Erkelenz&lang=de"></iframe>
+    </div>
+
+    <div class="widget-card">
+        <div class="title">Frechen</div>
+        <iframe src="https://api.wetteronline.de/wetterwidget?gid=10513&modeid=FC3&seourl=frechen&locationname=Frechen&lang=de"></iframe>
+    </div>
+
+    <div class="widget-card">
+        <div class="title">Krefeld</div>
+        <iframe src="https://api.wetteronline.de/wetterwidget?gid=10397&modeid=FC3&seourl=krefeld&locationname=Krefeld&lang=de"></iframe>
+    </div>
+
+    <div class="widget-card">
+        <div class="title">Köln</div>
+        <iframe src="https://api.wetteronline.de/wetterwidget?gid=10513&modeid=FC3&seourl=koeln&locationname=Köln&lang=de"></iframe>
+    </div>
+
+    <div class="widget-card">
+        <div class="title">Leverkusen</div>
+        <iframe src="https://api.wetteronline.de/wetterwidget?gid=10511&modeid=FC3&seourl=leverkusen&locationname=Leverkusen&lang=de"></iframe>
+    </div>
+
+    <div class="widget-card">
+        <div class="title">Sindorf</div>
+        <iframe src="https://api.wetteronline.de/wetterwidget?gid=a5012&modeid=FC3&seourl=kerpen/sindorf&locationname=Sindorf&lang=de"></iframe>
+    </div>
+
+    <div class="widget-card">
+        <div class="title">Uerdingen</div>
+        <iframe src="https://api.wetteronline.de/wetterwidget?gid=10397&modeid=FC3&seourl=krefeld/uerdingen&locationname=Uerdingen&lang=de"></iframe>
+    </div>
+
+</div>
+
+</body>
+</html>
